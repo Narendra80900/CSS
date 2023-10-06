@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #1a252c;
+    }
+
+    .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+    }
+
+    .content.box {
+        position: relative;
+        width: 150px;
+        height: 250px;
+        transition: 0.5s;
+        -webkit-box-reflect:below 1px linear-gradient(transparent,#0002)
+    }
+    .content.box img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .content:hover>:not(:hover)
+    {
+        margin: 0 -20px;
+        filter:drop-shadow(0 0 25px) drop-shadow(0 0 45px #000);
+        transform: perspective(500px) translateY(30deg) scale(0.9s);
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="box">
+            <img src="./pexels-photo-1212693.jpeg">
+        </div>
+
+        <div class="box">
+            <img src="./pexels-photo-1212693.jpeg">
+        </div>
+
+        <div class="box">
+            <img src="./pexels-photo-1212693.jpeg">
+        </div>
+
+        <div class="box">
+            <img src="./pexels-photo-1266808.jpeg">
+        </div>
+        <div class="box">
+            <img src="./pexels-photo-1266808.jpeg">
+        </div>
+    </div>
+</body>
+
+</html>

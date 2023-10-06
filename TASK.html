@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+
+        body {
+            /* background-color: blue; */
+            background-image: url(network-connection-background.avif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100vh;
+
+
+
+        }
+
+        .background {}
+
+        .form {
+            border-radius: 8px;
+            background-color: white;
+            height: 490px;
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            top: 70px;
+        }
+
+        h1 {
+            padding: 55px 0px 33px 0px;
+            font-size: 36px;
+        }
+
+        input {
+            border: 2px groove white;
+            margin: 7px 0px;
+            padding: 8px 30px;
+            border-radius: 13px;
+            box-shadow: 3px 3px 3px;
+        }
+
+        input:hover,
+        img {
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: blueviolet;
+            color: white;
+            border-radius: 25px;
+        }
+
+        .button:hover {
+            background-color: rgb(98 20 171);
+        }
+
+        .text {
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .icon {
+            font-size: 35px;
+            line-height: 2;
+        }
+
+        #g {
+            color: #c73030;
+        }
+
+        #f {
+            color: blue;
+        }
+
+        #l {
+            color: #1d32a8;
+        }
+
+        .line {
+            color: gray;
+            line-height: 2;
+        }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="background">
+
+
+            <div class="form">
+                <h1>SIGN UP</h1>
+
+                <input type="text" placeholder="username or email" required>
+                <br>
+                <input type="password" placeholder="password" maxlength="8">
+                <br>
+                <br>
+                <input class="button" type="submit" value="SING IN">
+
+                <div class="logo">
+                    or login width
+                </div>
+                <p class="text">Sign Up</p>
+                <div class="line">
+                    __________ OR __________
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-google" id="g"></i>
+                    <i class="fa-brands fa-facebook" id="f"></i>
+                    <i class="fa-brands fa-linkedin" id="l"></i>
+                </div>
+                <span>Already a user? <a href="">LOGIN</a></span>
+               
+    </form>
+
+</body>
+
+</html>
