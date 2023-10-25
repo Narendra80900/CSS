@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .header {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./image.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    nav {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .logo {
+        width: 150px;
+        height: 20px 0;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #000;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 20px 30px;
+        color: #fff;
+    }
+    .pera{
+        padding: 20px 8%;
+    }
+    nav.sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 8%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: paddin 1s;
+    }
+    nav.sticky ul{
+        width: auto;
+    }
+        </style>
+
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="./logo.png" class="logo">
+            <ul id="menu">
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>product</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </div>
+    <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in quo deleniti, magni voluptates molestiae enim
+        possimus, beatae repellendus tempore voluptas odio, quibusdam fugiat tempora accusamus a consequuntur
+        reprehenderit labore?</p>
+
+        <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in quo deleniti, magni voluptates molestiae enim
+            possimus, beatae repellendus tempore voluptas odio, quibusdam fugiat tempora accusamus a consequuntur
+            reprehenderit labore?</p>
+
+            <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in quo deleniti, magni voluptates molestiae enim
+                possimus, beatae repellendus tempore voluptas odio, quibusdam fugiat tempora accusamus a consequuntur
+                reprehenderit labore?</p>
+
+                <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in quo deleniti, magni voluptates molestiae enim
+                    possimus, beatae repellendus tempore voluptas odio, quibusdam fugiat tempora accusamus a consequuntur
+                    reprehenderit labore?</p>
+
+                    <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in quo deleniti, magni voluptates molestiae enim
+                        possimus, beatae repellendus tempore voluptas odio, quibusdam fugiat tempora accusamus a consequuntur
+                        reprehenderit labore?</p>
+</body>
+
+<script>
+    var navbar=document.getElementById("navbar");
+    var menu=document.getElementById("menu");
+
+    window.onscroll=function(){
+        if(window.pageYOffset >=menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+
+    }
+</script>
+</html>
