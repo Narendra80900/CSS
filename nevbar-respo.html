@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: url(background.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+
+        padding: 22px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo {
+        font-size: 30px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .navbar a {
+        font-size: 22spx;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        margin-left: 50px;
+    }
+    .icon{
+        font-size: 22px;
+        position: absolute;
+        right: 5%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+
+    }
+
+    @media (max-width: 576px){
+        .icon{
+            display: inline-flex
+        }
+        .nevbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: rgb(14, 160, 104)
+        }
+
+    };
+        
+    }
+</style>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">logo</a>
+
+        <label for="" class="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#">homr</a>
+            <a href="#">About</a>
+            <a href="#">gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+
+</html>
