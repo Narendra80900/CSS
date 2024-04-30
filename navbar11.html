@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:sans-serif ;
+            }
+            body{
+                height: 100%;
+                width: 100%;
+                background: #3498db;
+            }
+            .logo{
+                color: #fff;
+            }
+            nav{
+                padding: 10px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #004274;
+                position: relative;
+                height: 70px;
+            }
+            nav ul{
+                display: flex;
+                gap: 30px;
+            }
+            nav ul li{
+                list-style-type: none;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .menu-icon{
+                display: none;
+            }
+            .menu-icon i{
+                color: #fff;
+                font-size: 30px;
+            
+            }
+
+
+
+            @media (max-width:600px){
+                nav ul{
+                    position: absolute;
+                    top: 70px;
+                    left: 0;
+                    right: 0;
+                    flex-direction: column;
+                    align-items: center;
+                    background: #004274;
+                    overflow: hidden;
+                gap: 0px;
+
+                }
+                nav  ul li{
+                    padding: 20px;
+                }
+                .menu-icon{
+                    display: block;
+                }
+                #menulist{
+                    transition: all 0.5s;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <ul id="menulist">
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+        <div class="menu-icon" onclick="ToggleEvent()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+
+    <script>
+        let menulist=document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+
+        function ToggleEvent(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "300px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

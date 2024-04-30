@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         body{
+            background-color: #fd4e4e;
+         }
+        .cont{
+            display: flex;
+            width: 800px;
+            height:500px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 5px 5px 5px 5px black;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+        .form h2{
+            font-size: 32px;
+            font-family: sans-serif;
+            margin: 40px;
+        }
+        .box{
+            margin: 12px;
+            width: 65%;
+            height:30px ;
+            margin: 15px;
+            border: 1px solid black;
+            outline: none;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        #submit{
+            padding: 12px 30px;
+            width: 40%;
+            background-color: black;
+            color: wheat;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            border-radius: 20%;
+        }
+        #submit:hover{
+            cursor: pointer;
+            background-color: #750000;
+        }
+        .form a{
+            text-decoration: none;
+            color: black;
+            margin-top: 20px;
+        }
+        .side{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        .side img{
+            width: 450px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <form action="" class="form">
+            <h2>SIGN IN</h2>
+            <input type="email" name="email" placeholder="enter email"class="box">
+            <input type="password" name="password" placeholder="enter password" class="box">
+            <input type="submit" value="sign in" id="submit">
+            <a href="#"> Forgrt password ?</a>
+        </form>
+        <div class="side">
+            <img src="./171.jpg">
+        </div>
+    </div>
+</body>
+</html>
